@@ -45,7 +45,7 @@ let operacao;
 
     case '-':
      resultado = subtracao(valor1, valor2);
-     alert(`O resultado da substituição é: ${resultado}`);
+     alert(`O resultado da subtração é: ${resultado}`);
     break;
 
     case `*`:
