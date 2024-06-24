@@ -14,3 +14,15 @@ function criarMatrizAleatoria() {
 
 const matrizAleatoria = criarMatrizAleatoria();
 console.log(matrizAleatoria);
+
+const divMatriz = document.getElementById('matriz'); 
+    let tabelaHTML = '<table>';
+    for (let i = 0; i < matrizAleatoria.length; i++) {
+      tabelaHTML += '<tr>';
+      for (let j = 0; j < matrizAleatoria[i].length; j++) {
+        tabelaHTML += `<td>${matrizAleatoria[i][j]}</td>`;
+      }
+      tabelaHTML += '</tr>';
+    }
+    tabelaHTML += '</table>';
+    divMatriz.innerHTML = tabelaHTML; 
