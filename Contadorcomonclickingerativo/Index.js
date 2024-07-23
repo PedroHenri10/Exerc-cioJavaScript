@@ -18,3 +18,8 @@ function decremento(){
 btnincremento.addEventListener('click', incremento);
 
 btndecremento.addEventListener('click', decremento);
+
+// html 
+// <p id="numero">1</p>
+// <button onclick="incremento()" type="submit" id="incremento">+</button>
+// <button onclick="decremento()" type="submit" id="decremento">-</button>
