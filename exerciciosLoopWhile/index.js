@@ -10,6 +10,7 @@ while(n <=100){
   console.log(n);
   n++;
 }
+console.log("");
 
 // pegar um numero e ficar somando de 1 ate o próprio o numero
 let number = 50;
