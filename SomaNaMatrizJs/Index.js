@@ -26,3 +26,17 @@ const divMatriz = document.getElementById('matriz');
     }
     tabelaHTML += '</table>';
     divMatriz.innerHTML = tabelaHTML; 
+
+fillLines(){
+let selectedLines;
+  for(c =0; c< 4; c++){
+do{
+  selectedLines = parseInt(prompt("Seleciona colunas de 0 a 9"));
+  pselectedLines = document.createElement('p');
+  pselectedLines.textContent = selectedLines;
+  document.body.appendChild(pselectedLines);
+}while(selectedLines < 0 || selectedLines > 9);
+    
+    selectedLines[c] = selectedLines;
+  }
+}
