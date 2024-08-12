@@ -22,3 +22,11 @@ const totalscore = score1 + score2 + score3;
 const avgScore = totalscore/3;
 
 console.log(totalscore, avgScore);
+
+const plates = 20;
+const people = 7;
+const remainingPlates = plates % people;
+remainingPlates++;
+
+const message = "there are " remainingPlates " plates available";
+console.log(message)
