@@ -11,3 +11,17 @@
 7. refactor to object paraneters 
 
 */
+
+function fullname(firstName, lastName){
+  const fullname = `${firstName} + ${lastName}`;
+  return console.log(fullname.toUpperCase());
+}
+
+fullName("Rony", "Rustic");
+
+function objectFullName({firstName, LastName}){
+  const objectFullName = `${firstName} + ${lastName}`;
+  return console.log(objectFullName.toUpperCase());
+}
+
+objectFullName({lastName: "Thompson", firstName: "Mary"});
