@@ -13,14 +13,14 @@
 */
 
 function fullname(firstName, lastName){
-  const fullname = `${firstName} + ${lastName}`;
+  const fullname = `${firstName} ${lastName}`;
   return console.log(fullname.toUpperCase());
 }
 
-fullName("Rony", "Rustic");
+fullname("Rony", "Rustic");
 
-function objectFullName({firstName, LastName}){
-  const objectFullName = `${firstName} + ${lastName}`;
+function objectFullName({firstName, lastName}){
+  const objectFullName = `${firstName} ${lastName}`;
   return console.log(objectFullName.toUpperCase());
 }
 
