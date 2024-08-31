@@ -30,11 +30,21 @@ const students = [{
 },
 ]
 
-const updateStudents = students.map(function (students) {
-       return {
-       ...students,
-       role: "student",
-     };
-});
+const updateStudents = students.map(function (student) {
+   
+       student.role = "student";
+       return student;
 
 console.log(updateStudents);
+
+/* #### highScores
+
+1. filter array and return only scores >= 80
+2. assign to 'highScores' variable and log
+*/
+const highScores = students.filter (function (student)  {
+   if(student.score >= 80){
+     return student;
+   }
+});       
+   console.log(highScores);                               
