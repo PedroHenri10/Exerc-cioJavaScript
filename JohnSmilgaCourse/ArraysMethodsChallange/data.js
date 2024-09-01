@@ -52,9 +52,16 @@ const highScores = students.filter (function (student)  {
      return student;
    }
 });       
-   console.log(highScores);    
+   //console.log(highScores);    
 
 const specificId = students.find(function (idStudent) {
   return idStudent.id === 4;
 });
-  console.log(specificId);
+  //console.log(specificId);
+
+const averageScore =
+  students.reduce(function (scoresTotal, student) {
+    return scoresTotal + student.score / students.length;
+  }, 0) 
+
+console.log(averageScore);
