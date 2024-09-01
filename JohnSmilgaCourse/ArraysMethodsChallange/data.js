@@ -41,10 +41,20 @@ console.log(updateStudents);
 
 1. filter array and return only scores >= 80
 2. assign to 'highScores' variable and log
+
+#### specificId
+
+1. find specific id in array
+2. assign to 'specificId' variable and log
 */
 const highScores = students.filter (function (student)  {
    if(student.score >= 80){
      return student;
    }
 });       
-   console.log(highScores);                     
+   console.log(highScores);    
+
+const specificId = students.find(function (idStudent) {
+  return idStudent.id === 4;
+});
+  console.log(specificId);
