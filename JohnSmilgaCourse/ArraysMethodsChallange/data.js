@@ -34,7 +34,7 @@ const updateStudents = students.map(function (student) {
    
        student.role = "student";
        return student;
-
+});
 console.log(updateStudents);
 
 /* #### highScores
@@ -47,4 +47,4 @@ const highScores = students.filter (function (student)  {
      return student;
    }
 });       
-   console.log(highScores);                               
+   console.log(highScores);                     
